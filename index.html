@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chatbot</title>
+</head>
+<script src="index.js"></script>
+
+<body>
+    <h1>Welcome to the Simple Chatbot</h1>
+
+    <div class="box">
+        <h2>Talk to the Chatbot below!</h1>
+
+            <label id="resp"></label>
+
+            <p>
+                <input type="text" id="inptxt" placeholder="Type your query">
+                <button id="btnsend" onclick="clicked()">Send</button>
+                <button id="query" onclick="QClick()">?</button>
+            </p>
+
+    </div>
+
+    <div class="modal-container" id="modal">
+        <div class="modal">
+            <h2>Simple Chatbot</h2>
+            This is a simple example of a chatbot using HTML, CSS and JavaScript. It can be further expanded
+            on with additional conditional statements.
+            <p>Currently there are 4 commands that the bot can recognize:</p>
+            <p> 
+                <br>hello: responds with a randomly selected greeting from and array</br>
+                <br>time: tells you the current local time in 12 hours format</br>
+                <br>date: tells you the day of the week, and the date</br>
+                <br>weather: uses two web APIs, one to fetches the city you live in based on your IP,
+                the second uses the city to find the weather info</br>
+            </p>
+            <button id="close" onclick="CClick()">Close</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
