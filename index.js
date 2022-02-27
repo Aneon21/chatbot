@@ -73,7 +73,6 @@ function clicked() {
 
 function QClick(){
     document.getElementById('modal').classList.add('show');
-    console.log('ok')
 }
 
 function CClick(){
